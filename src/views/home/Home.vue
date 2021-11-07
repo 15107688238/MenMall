@@ -8,6 +8,7 @@
 
 <script>
   import NavBar from 'components/common/navbar/NavBar'
+  import {request} from 'network/request'
 
   export default {
     name: "Home",
@@ -22,7 +23,11 @@
     },
     created() {
       // 1.请求多个数据
-     
+    request({
+      url: '/multidata'
+    }).then(res => {
+      console.log(res)
+    })
       
     }
   }
