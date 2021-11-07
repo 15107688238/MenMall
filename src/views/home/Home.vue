@@ -4,6 +4,7 @@
       <div slot="center">购物街</div>
     </nav-bar>
     <home-swiper :banners="banners"></home-swiper>
+    <recommend-view :recommends="recommends"/>
     
     
   </div>
@@ -12,6 +13,7 @@
 <script>
   import NavBar from 'components/common/navbar/NavBar'
   import HomeSwiper from './childComps/HomeSwiper.vue'
+  import RecommendView from './childComps/RecommendView.vue'
     
   import {request} from 'network/request'
 
@@ -19,7 +21,8 @@
     name: "Home",
     components: {
       NavBar,
-      HomeSwiper
+      HomeSwiper,
+      RecommendView
     },
     data() {
       return {
@@ -35,6 +38,7 @@
     }).then(res => {
       console.log(res)
       this.banners = res.data.banner.list
+      this.recommends = res.data.recommend.list
     })
       
     }

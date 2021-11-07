@@ -53,3 +53,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - 设置navbar相关的样式
 - 使用navbar实现首页的导航栏
 
+#### 2.2. 请求首页数据
+
+- 封装请求首页更多数据
+- 将banner数据放在banners变量中
+- 将recommend数据放在recommends变量中
+
+
+
+#### 2.3. 根据Swiper封装HomeSwiper
+
+- 使用Swiper和SwiperItem
+- 传入banners进行展示
