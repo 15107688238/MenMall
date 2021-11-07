@@ -5,7 +5,12 @@ export function request(config){
     baseURL: 'https://www.fastmock.site/mock/04e40dc0be2cc3bdc6bcdbd198cd3533/home',
     timeout: 5000
   })
-   
+  instance.interceptors.request.use(req => {
+    // return JSON.stringify(req)
+    console.log(req)
+    
+    return req
+  })
   instance.interceptors.response.use(rep => {
     return rep.data
   })

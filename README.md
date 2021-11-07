@@ -46,3 +46,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - 创建axios实例
 - 拦截响应，返回.data数据
 - 根据传入的options发送请求，并且调用对应resolve和reject
+
+#### 2.1. navbar的封装和使用
+
+- 封装navbar包含三个插槽：left、center、right
+- 设置navbar相关的样式
+- 使用navbar实现首页的导航栏
+
