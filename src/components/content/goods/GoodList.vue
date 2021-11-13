@@ -1,9 +1,10 @@
 <template>
-  <div class="good-list">
+  <div class="good-list">   
     
-    <div v-for="(item, index) in goods" :key="index" class="good-list-itemd">
-      <good-list-item :item="item"></good-list-item>
-    </div>
+      <good-list-item :item="item" 
+                      v-for="(item, index) in goods" 
+                      :key="index" 
+                      class="good-list-itemd"></good-list-item>
   </div>
 </template>
 
@@ -19,7 +20,7 @@ export default {
         return []
       }
     }
-  },
+  },  
   components: {
     GoodListItem
   }
@@ -28,12 +29,22 @@ export default {
 
 <style scoped>
   .good-list{
-   overflow: hidden;
+   /* overflow: hidden; */
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* height: 20000px; */
+    width: 100vw;
+    
   }
   .good-list-itemd {
     width: 47%;
-    margin: 5px;
+    margin: 4px;
+    /* display: flex; */
+    
+
+    
+    
   }
 </style>

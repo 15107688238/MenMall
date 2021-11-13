@@ -15,11 +15,6 @@ export default {
 
 <style scoped>
   .nav-bar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 9;
     display: flex;
     height: 44px;
     text-align: center;

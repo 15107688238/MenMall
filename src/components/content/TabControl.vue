@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style>
+<style scpoed>
   .tab-control {
     /* overflow: hidden; */
     width: 100%;
@@ -57,6 +57,7 @@ export default {
     color: var(--color-tint);
   }
   .active span {
+    border-radius: 8px;
     border-bottom: 2px solid var(--color-tint);
   }
 </style>
