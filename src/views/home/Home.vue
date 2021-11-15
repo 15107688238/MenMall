@@ -76,7 +76,8 @@
         currentType: 'pop',
         isShow: false,
         TCoffsetTop: 0,
-        Tcshow: false
+        Tcshow: false,
+        saveY: 0
       }
     },
     created() {
@@ -90,11 +91,12 @@
     },
     mounted () {
       //监听图片是否加载完成
-      this.$bus.$on('imageLoad', () => {
+      this.$bus.$on('imgLoad', () => {
         this.$refs.scroll.refresh()
         // console.log(this.$refs.scroll1)
       })
     },
+    
     methods: {
       //网络请求相关
       getMultiData() {

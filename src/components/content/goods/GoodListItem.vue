@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     imgLoad() {
-      this.$bus.$emit('imageLoad')
+      this.$bus.$emit('imgLoad')
     }
   }
 }
